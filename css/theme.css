@@ -37,7 +37,6 @@ img {max-width: 100%;}
 	 left:0px;
 	 right:0px;
 	 bottom:0;
-	 height: 50px;
 }
 
 .navArea {
@@ -678,4 +677,13 @@ blockquote cite {
 }
 blockquote cite:before {
 	content: "\2014 \2009";
+}
+
+
+/*About added styles*/
+.what-we-do{
+
+}
+.heading2{
+	
 }

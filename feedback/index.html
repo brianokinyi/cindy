@@ -47,6 +47,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
 
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -110,20 +112,23 @@
 		</div>
 		<div class="row col-sm-4">
 			  <h2>Give your feedback</h2>
-			  <form action="/action_page.php" method="post">
+			  <form action="../scripts/feedback_action.php" method="POST" name="feedback">
 			  	<div class="form-group">
 			      <label for="name">Name:</label>
-			      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+			      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required="required">
 			    </div>
+
 			    <div class="form-group">
 			      <label for="email">Email:</label>
-			      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+			      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required="required">
 			    </div>
+
 			    <div class="form-group">
 			      <label for="feedback">Feedback:</label>
-			      <textarea class="form-control" rows="5" id="comment" placeholder="Enter feedback" name="feedback"></textarea>
+			      <textarea class="form-control" rows="5" id="comment" placeholder="Enter feedback" name="comment" required="required"></textarea>
 			    </div>
-			    <button type="submit" class="btn btn-default">Submit</button>
+
+			    <button type="submit" class="btn btn-default" name="submit">Submit</button>
 			  </form>
 		</div>
 	</div>

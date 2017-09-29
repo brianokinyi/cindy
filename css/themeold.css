@@ -137,8 +137,10 @@ img {max-width: 100%;}
 	-webkit-transition:all .5s;
 	transition: all .5s;
 }
-
-@media (max-width: 500px) {
+.collapse {
+	display: block !important;
+}
+@media (max-width: 655px) {
 	.collapse {background: #333;}
 	.navbar.navbar-inverse.navbar-static-top a {padding: 15px 16px;line-height: 15px;font-size: 13px;}
 }
@@ -526,7 +528,7 @@ span.nav-close:before {
 	}
 }
 /*---------------------------------------------------- 	Contact------------------------------------------------------*/
-select,input.contact {
+input.contact {
 	background:#fff;
 	border:solid 1px #ddd;
 	color:#000;
@@ -536,11 +538,18 @@ select,input.contact {
 	margin-bottom:30px;
 	outline:none;
 }
-select,input.contact.noMarr {
+input.contact.noMarr {
 	margin-right:0px;
 }
-div.contact{
+textarea.contact {
+	background:#fff;
+	color:#000;
+	border:solid 1px #ddd;
 	padding:15px 30px;
+	
+	margin-bottom:40px;
+	outline:none;
+	height:150px;
 }
 .contact.submit {
 	background:#333;
@@ -561,14 +570,14 @@ div.contact{
 }
 .error input,input.error,.error textarea,textarea.error {
 	background-color:#ffffff;
-	border:1px solid red !important;
+	border:1px solid red !Important;
 	-webkit-transition:border linear 0.2s,box-shadow linear 0.2s;
 	-moz-transition:border linear 0.2s,box-shadow linear 0.2s;
 	-o-transition:border linear 0.2s,box-shadow linear 0.2s;
 	transition:border linear 0.2s,box-shadow linear 0.2s;
 }
 @media screen and (min-width:768px) {
-	select,input.contact.col-md-6 {
+	input.contact.col-md-6 {
 		width: 48.5%;
 	}
 }
@@ -668,4 +677,13 @@ blockquote cite {
 }
 blockquote cite:before {
 	content: "\2014 \2009";
+}
+
+
+/*About added styles*/
+.what-we-do{
+
+}
+.heading2{
+	
 }
